@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "wanted",
+	"version": "${version}",
+	"name": "Wanted",
+	"description": "Just a bunch of random tweaks that I wanted in Minecraft. Hope you enjoy!",
+	"authors": [
+		"Conurian"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Moosemann55/Wanted---1.19.3.git"
+	},
+	"license": "MIT",
+	"icon": "assets/wanted/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.conurian.wanted.Wanted"
+		],
+		"client": [
+			"net.conurian.wanted.WantedClient"
+		],
+		"fabric-datagen": [
+			"net.conurian.wanted.WantedDataGenerator"
+		]
+	},
+	"mixins": [
+		"wanted.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
